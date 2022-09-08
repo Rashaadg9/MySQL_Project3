@@ -86,6 +86,7 @@ SELECT * FROM EmployeeDetails WHERE EmpId IN (SELECT ManagerId FROM EmployeeDeta
 DELETE r1 FROM EmployeeDuppTest r1, EmployeeDuppTest r2 WHERE (r1.FirstName = r2.FirstName) AND 
 (r1.LastName = r2.LastName) AND (r1.TestKey > r2.TestKey);
 
+-- SET SQL_SAFE_UPDATES = 0;
 /*DROP TABLE IF EXISTS EmployeeDuppTest;
 CREATE TABLE EmployeeDuppTest
 (
